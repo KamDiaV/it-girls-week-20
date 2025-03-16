@@ -18,7 +18,7 @@ async function fetchData() {
     // Проверка корректности введенного ID
     if (!id || id < 1 || id > 10) {
         resetUI();
-        showError("Введите корректный ID (от 1 до 10)!");
+        showError("Enter a valid ID (from 1 to 10)!");
         return;
     }
 
