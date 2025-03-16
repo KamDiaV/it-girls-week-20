@@ -17,5 +17,5 @@
 - JavaScript (работа с API, `fetch`, кеширование, обработка ошибок).
 - **Git и GitHub** для управления кодом.
 
-Автор: St Diana
-GitHub: [KamDiaV](https://github.com/KamDiaV)
+**Автор:** St Diana  
+**GitHub:** [KamDiaV](https://github.com/KamDiaV)
