@@ -70,18 +70,12 @@ function showError(message, imageUrl = "") {
     errorDiv.classList.add("show");
 }
 
-function debounce(func, delay) {
-    let timeout;
-    return function () {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func.apply(this, arguments), delay);
-    };
-}
-
-document.getElementById("fetchButton").addEventListener("click", debounce(fetchData, 500));
+document.getElementById("fetchButton").addEventListener("click", fetchData);
 
 document.addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         fetchData();
     }
 });
+
+// window.addEventListener("load", () => localStorage.clear());
