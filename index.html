@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SWAPI Data Fetch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fetch Data from SWAPI</h1>
+    
+    <select id="category">
+      <option value="people">Character</option>
+      <option value="planets">Planet</option>
+      <option value="starships">Starship</option>
+    </select>
+    <input type="number" id="id" placeholder="Enter ID (1-10)" min="1" max="10">
+    <br>
+    <button id="fetchButton">Fetch Data</button>
+    
+    <div class="loader" id="loader"></div>
+    <div class="output" id="output"></div>
+    <div class="error" id="error"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
